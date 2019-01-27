@@ -56,13 +56,13 @@ class EventCreationFormState extends State<EventCreationForm> {
           ),
           TextFormField(
             decoration: InputDecoration(
-            hintText: "Event Name",
+            hintText: "Event Activity",
             hintStyle: TextStyle(fontWeight: FontWeight.w300, color: Colors.black),
-            labelText: "Event Name"
+            labelText: "Event Activity"
            ),
             validator: (value) {
               if (value.isEmpty) {
-                return 'Name cannot be empty!';
+                return 'Activity cannot be empty!';
               }
             },
           ),
