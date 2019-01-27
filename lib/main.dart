@@ -28,11 +28,10 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        LoginTextField("Email"),
-        LoginTextField("Password"),
-        Padding(padding: EdgeInsets.all(70),),
+        LoginTextField("Email", 320),
+        LoginTextField("Password", 320),
+        Padding(padding: EdgeInsets.all(30),),
         RaisedButton(onPressed: (){}, child: Text("login"),)
       ],
     );
@@ -40,17 +39,21 @@ class LoginPage extends StatelessWidget {
 }
 
 class LoginTextField extends StatelessWidget {
-  LoginTextField(this.text);
+  LoginTextField(this.text, this.length);
 
   final String text;
+  final double length;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Text(text),
-        Container(child: TextField(), width: 100,),
-      ],
+    return Container(
+      width: length,
+      child: Column(
+        children: <Widget>[
+          Container(child: Text(text), alignment: Alignment.centerLeft, margin: EdgeInsets.only(left: 10, top: 10),),
+          Container(child: TextField(), margin: EdgeInsets.only(left: 10, right: 10, bottom: 5,),),
+        ],
+      ),
     );
   }
 }
