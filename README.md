@@ -1,9 +1,11 @@
 # deltahacks_flutter
 
-A new Flutter project: an app that simply makes it easy, convenient, and fun for people in your community to connect and plan physical activities together around your area.
+#### A new Flutter project: an app that simply makes it easy, convenient, and fun for people in your community to connect and plan physical activities together around your area.
 
 
-Challenge: Exercise for the Community - McMaster University
+#### Challenge: Exercise for the Community - McMaster University
+
+#### Project status: in development. 
 
 ## Getting Started
 
