@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'event.dart';
+//import 'event.dart';
 
-void main() => runApp(EventPage());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
