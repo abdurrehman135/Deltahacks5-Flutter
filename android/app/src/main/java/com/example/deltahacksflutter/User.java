@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 
 public class User {
     private String userName;
@@ -27,7 +27,7 @@ public class User {
         this.password = password;
     }
 
-    public String getEventList(){
+    public Event getEventList(){
         return this.eventList;
     }
 
@@ -35,7 +35,7 @@ public class User {
         this.eventList.add(e);
     }
 
-    public String getCreatedEventList(){
+    public Event getCreatedEventList(){
         return this.createdEventList;
     }
 
@@ -43,4 +43,4 @@ public class User {
         this.createdEventList = e;
     }
 
-}
+}*/
