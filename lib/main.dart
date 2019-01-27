@@ -31,18 +31,9 @@ class LoginPage extends StatelessWidget {
       children: <Widget>[
         LoginTextField("Email", 320),
         LoginTextField("Password", 320),
-        Padding(padding: EdgeInsets.all(30),),
-        /*ButtonTheme(
-          RaisedButton(
-          onPressed: (){}, 
-          child: Text("login"),
-          
-          //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0),),
-          )
-        )*/
-
-
-      ButtonTheme(
+        //Padding(padding: EdgeInsets.all(30),),
+        Padding(padding: EdgeInsets.only(left: 30, right: 30, bottom: 35),),
+        ButtonTheme(
           minWidth: 320,
           height: 40,
           buttonColor: Color(0xFF192A56),
@@ -53,7 +44,6 @@ class LoginPage extends StatelessWidget {
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0),),
           ),
         )
-
       ],
     );
   }
